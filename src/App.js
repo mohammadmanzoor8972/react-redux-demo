@@ -4,6 +4,7 @@ import './App.css';
 import Form from './form';
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
@@ -16,5 +17,9 @@ class App extends Component {
     );
   }
 }
+//store.dispatch({type:"Add_COLOR", id:"3232-3231111-22", title:"Part Baby", color:"yellow", timestamp:"32"})
+
+
+
 
 export default App;
