@@ -1,5 +1,5 @@
 import constants from "../constant";
-import { initialState } from '../data/colors';
+import { initialState } from '../../data/colors';
 
 
 export const colors = (state = [], action) => {
@@ -21,8 +21,9 @@ export const colors = (state = [], action) => {
             return state.sort((x,y)=>x.title-y.title);
         case constants.RESET :
             return initialState.colors;
+        case constants.GET_COLORS :
+            return [...state];
         default : 
-        
         return state;
     }
 }

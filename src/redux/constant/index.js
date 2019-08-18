@@ -3,7 +3,8 @@ const constants = {
     ADD_COLORS : "ADD_COLOR",
     RATE_COLOR: "RATE_COLOR",
     REMOVE_COLOR: "REMOVE_COLOR",
-    RESET: "RESET"
+    RESET: "RESET",
+    GET_COLORS: "GET_COLORS"
 }
 
 export default constants;

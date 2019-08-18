@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
-import store from '../store/index';
+import store from '../redux/store/index';
 
 
 class Grid extends Component {
@@ -18,6 +18,7 @@ class Grid extends Component {
                    let id = event.target.id;
                     store.dispatch({type:"REMOVE_COLOR", id:id});
                 }} key={data.id} id={data.id}>{data.title}</span>)}
+                {this.props.children}
             </div>
         )
     }
